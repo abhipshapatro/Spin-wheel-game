@@ -23,12 +23,12 @@ function Main() {
     }
 
   return (
-    <div className="flex flex-col md:flex-row gap-10 md:gap-40 ">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-28 lg:gap-40 ">
 
       {/* left side */}
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center md:shrink-0">
         {/* image */}
-        <img src={image} alt="" className="h-48 w-48 lg:h-80 lg:w-80" />
+        <img src={image} alt="" className="h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80" />
       </div>
 
       {/* right side */}
@@ -89,16 +89,16 @@ function Main() {
                 {/* checkbox input */}
               <input
                 type="checkbox"
-                className="form-check-input rounded w-[49px] h-[49px] accent-black"
+                className="form-check-input rounded w-[40px] h-[40px] accent-black"
                 required
               />
               {/* checkbox text */}
               <span className="ml-3">
-                <p className="font-semibold text-[9px] md:text-xs px-4">
+                <p className="font-semibold text-[9px] md:text-xs px-1">
                   I agreed to receiving recurring automated messages at the
                   number I have provided.
                 </p>
-                <p className="font-semibold text-[9px] md:text-xs px-4">
+                <p className="font-semibold text-[9px] md:text-xs px-1">
                   Consent is not a condition to purchase.
                 </p>
               </span>

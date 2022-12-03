@@ -60,11 +60,11 @@ function Result() {
   }, [coupons])
 
   return (
-    <div className="flex flex-col md:flex-row gap-10 md:gap-40">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-40  ">
       {/* left side */}
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center">
         {/* image */}
-        <img src={image} alt="" className="h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80" />
+        <img src={image} alt="" className=" h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80" />
       </div>
 
       {/* right side */}
