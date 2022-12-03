@@ -19,7 +19,7 @@
     background-image: url("./assets/bg-upper-mobile.png"), url("./assets/bg-lower-mobile.png");
     background-repeat: no-repeat;
     background-position: top center, bottom center;
-    background-size: 100% 25%, 100% 25%;
+    background-size: 100% 25%, 100% 25% !important;
 }
 }
   
