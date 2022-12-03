@@ -7,8 +7,8 @@ import './index.css'
 
 function App() {
   return (
-    <>
-      <div className="flex flex-col items-center justify-center h-screen bg-lightGreen bgImage">
+    
+      <div className="flex flex-col items-center justify-center min-h-screen min-w-fit bg-lightGreen bgImage">
         <Router>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -17,7 +17,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </>
+   
   );
 }
 

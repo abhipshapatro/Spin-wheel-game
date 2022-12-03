@@ -9,20 +9,20 @@ function Result() {
     {
       key: 2,
       code: "AIUXH499",
-      name: "on ₹5000 purchase",
+      name: "on Winter Collection",
       offer: "Blanc 50ml ₹499",
     },
     {
       key: 3,
       code: "FRGFEEBX",
-      name: "on purchase of ₹6000",
+      name: "on Makeup Brands",
       offer: "Free Gift Box",
     },
     { key: 4, code: "XAVBM500", name: "on Sneakers", offer: "Flat ₹500 off" },
     {
       key: 5,
       code: "BNMIL999",
-      name: "on Best Seller",
+      name: "on T-Shirts",
       offer: "EDT NOIR ₹999",
     },
     { key: 6, code: "VBGH5000", name: "on Jeans", offer: "₹5,000 Voucher" },
@@ -60,30 +60,30 @@ function Result() {
   }, [coupons])
 
   return (
-    <div className="flex flex-col md:flex-row p-10 px-20 gap-24 md:gap-40">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-40">
       {/* left side */}
       <div className="flex items-center justify-center ">
         {/* image */}
-        <img src={image} alt="" className="h-48 w-48 lg:h-80 lg:w-80" />
+        <img src={image} alt="" className="h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80" />
       </div>
 
       {/* right side */}
       <div className="flex flex-col items-center justify-center px-10">
         {/* congrats */}
-        <div className="row mb-3">
-          <span className=" font-bold text-2xl">Congrats! You Won:</span>
+        <div className="row mb-6">
+          <span className=" font-bold text-lg md:text-2xl">Congrats! You Won:</span>
         </div>
         {/* coupon */}
-        <div className="row mb-6 flex flex-col items-center justify-center">
-          <span className="font-bold text-4xl leading-normal">
+        <div className="row mb-6 flex flex-col items-center justify-center gap-3">
+          <span className="font-bold text-2xl md:text-4xl leading-normal">
             {offer}
           </span>
-          <span className="font-bold text-4xl leading-normal">
+          <span className="font-bold text-2xl md:text-4xl leading-normal">
             {name}
           </span>
         </div>
         {/* code */}
-        <div className="flex justify-between mb-6 w-full">
+        <div className="flex justify-between mb-6 ">
           <p className="bg-bgGreen text-zinc-200 font-bold text-lg py-2 px-4 rounded-l-xl w-full">
             {code}
           </p>
@@ -94,12 +94,13 @@ function Result() {
             Copy!
           </button>
         </div>
+
         {/* copy btn */}
-        <div className="row mb-2">
+        <div className="row mb-3">
           <button
             onClick={handleClick}
             type="submit"
-            className="bg-darkGreen text-white text-xl font-bold p-4 rounded-3xl w-full hover:bg-gradient-to-r hover:from-emerald-400 hover:to-emerald-800"
+            className="bg-darkGreen text-white text-lg font-bold p-4 rounded-3xl w-full hover:bg-gradient-to-r hover:from-emerald-400 hover:to-emerald-800"
           >
             Close Panel & Copy
           </button>
@@ -107,7 +108,7 @@ function Result() {
 
         {/* terms & conditions */}
         <div className="flex flex-col items-center justify-center md:flex-row mt-2 p-0 m-0 gap-2">
-          <span className="text-[9px] italic text-darkGreen">
+          <span className="text-[7px] md:text-[9px] italic text-darkGreen">
             *You can claim your coupon for 10 minutes only!
           </span>
         </div>

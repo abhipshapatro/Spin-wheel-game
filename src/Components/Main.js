@@ -23,7 +23,7 @@ function Main() {
     }
 
   return (
-    <div className="flex flex-col md:flex-row p-10 px-20 gap-24 md:gap-40 ">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-40 ">
 
       {/* left side */}
       <div className="flex items-center justify-center ">
@@ -32,7 +32,7 @@ function Main() {
       </div>
 
       {/* right side */}
-      <div className="flex flex-col items-start justify-center w-[390px]">
+      <div className="flex flex-col items-start justify-center w-[250px] md:w-[390px]">
         {/* heading */}
         <div className="row mb-5">
           <span className=" font-bold text-4xl">
@@ -85,20 +85,20 @@ function Main() {
               </div>
             </div>
             {/* checkbox div */}
-            <div className="mb-4 flex border-2 border-black p-2 rounded-md">
+            <div className="mb-4 flex border-2 border-black px-3 py-0.5 md:px-4 md:py-1 rounded-md items-center justify-center">
                 {/* checkbox input */}
               <input
                 type="checkbox"
-                className="form-check-input m-1 rounded w-[49px] h-[49px] accent-black"
+                className="form-check-input rounded w-[49px] h-[49px] accent-black"
                 required
               />
               {/* checkbox text */}
               <span className="ml-3">
-                <p className="font-semibold text-xs">
+                <p className="font-semibold text-[9px] md:text-xs px-4">
                   I agreed to receiving recurring automated messages at the
                   number I have provided.
                 </p>
-                <p className="font-semibold text-xs">
+                <p className="font-semibold text-[9px] md:text-xs px-4">
                   Consent is not a condition to purchase.
                 </p>
               </span>
@@ -112,16 +112,16 @@ function Main() {
             </button>
           </form>
           {/*  terms & conditions  */}
-          <div className="flex flex-col items-center justify-center md:flex-row mt-2 p-0 m-0 gap-2">
-            <span className="text-[9px] italic">
+          <div className="flex flex-col items-center justify-center md:flex-row mt-2 p-0 m-0 gap-1">
+            <span className="text-[7px] md:text-[9px] italic">
               *You can spin the wheel only once!
             </span>
-            <span className="text-[9px] italic">
+            <span className="text-[7px] md:text-[9px] italic">
               *If you win, you can claim the coupon for 10 minutes only!
             </span>
           </div>
           {/* extra info */}
-          <div className="mt-2 items-center justify-center md:justify-end flex gap-2">
+          <div className="mt-2 items-center justify-center md:justify-end flex gap-1">
             <span className="font-bold text-lg">No, I don't feel lucky</span>
             <div className="row">
               <FaTimes size={38} />
