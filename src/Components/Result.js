@@ -3,9 +3,13 @@ import { useNavigate } from "react-router-dom";
 import image from "../assets/wheel.png";
 
 function Result() {
-
   const coupons = [
-    { key: 1, code: "XAXPDF20", name: "on Best Sellers", offer: "Flat 20% off" },
+    {
+      key: 1,
+      code: "XAXPDF20",
+      name: "on Best Sellers",
+      offer: "Flat 20% off",
+    },
     {
       key: 2,
       code: "AIUXH499",
@@ -33,7 +37,6 @@ function Result() {
   const [name, setName] = useState("");
   const navigate = useNavigate();
 
-
   const handleClick = () => {
     handleCopy();
     navigate("/");
@@ -51,27 +54,32 @@ function Result() {
     setCode(coupons[item].code);
     setName(coupons[item].name);
     setOffer(coupons[item].offer);
-  }
-
+  };
 
   //renders immediately
   useEffect(() => {
     fetchData();
-  }, [coupons])
+  }, [coupons]);
 
   return (
     <div className="flex flex-col md:flex-row gap-10 md:gap-40  ">
       {/* left side */}
       <div className="flex items-center justify-center">
         {/* image */}
-        <img src={image} alt="" className=" h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80" />
+        <img
+          src={image}
+          alt=""
+          className=" h-48 w-48 md:h-64 md:w-64 lg:h-80 lg:w-80"
+        />
       </div>
 
       {/* right side */}
       <div className="flex flex-col items-center justify-center px-10">
         {/* congrats */}
         <div className="row mb-6">
-          <span className=" font-bold text-lg md:text-2xl">Congrats! You Won:</span>
+          <span className=" font-bold text-lg md:text-2xl">
+            Congrats! You Won:
+          </span>
         </div>
         {/* coupon */}
         <div className="row mb-6 flex flex-col items-center justify-center gap-3">
